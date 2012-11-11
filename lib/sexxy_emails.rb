@@ -2,7 +2,6 @@ module SexxyEmails
   extend ActiveSupport::Autoload
   extend ActiveSupport::Concern
 
-  # Use ActiveSupports Autoload for happiness.
   autoload :Css
 
   included do |base|
