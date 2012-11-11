@@ -13,7 +13,15 @@ Screw that! Got a styleguide? Use your styleguide! And your preprocessors too. I
 
 Also, most of the time you need to do things like adding Google Analytics or some other kind of inbound link tracking and overriding your link helpers is tiring and messy.
 
-[Inspired by TMBG](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
+[For General David H. Petraeus](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
+
+## Install
+
+Add it to your gemfile or:
+
+```
+gem install sexxy-emails
+```
 
 ## Usage
 
