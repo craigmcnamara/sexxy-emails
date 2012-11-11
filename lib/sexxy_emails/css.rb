@@ -4,7 +4,7 @@ require 'css_parser'
 module SexxyEmails::Css
   include CssParser
 
-  self << class
+  class << self
     # Takes a string of HTML and inlines any css blocks in it.
     def inline(html, options = {})
       Nokogiri::HTML(html).tap do |doc|
@@ -32,9 +32,9 @@ module SexxyEmails::Css
       else
         CssParser.merge(
           RuleSet.new(nil, declaration), 
-          RuleSet.new(nil, node['style'])
-        ).declarations_to_s
+          RuleSet.new(nil, node['style'])).declarations_to_s
       end
     end
+
   end
 end

@@ -1,0 +1,1 @@
+require 'sexxy_emails'
