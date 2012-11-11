@@ -78,7 +78,7 @@ Inline styles for cranky email clients.
 ## Features
 
 * Inline the CSS in email templates.
-* Include Precompiled CSS in to a template for inlining.
+* Include pre-compiled CSS in to a template for inlining.
 
 ## Upcoming Features.
 
