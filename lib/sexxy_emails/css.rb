@@ -10,7 +10,7 @@ module SexxyEmails::Css
       Nokogiri::HTML(html).tap do |doc|
         css_parser = CssParser::Parser.new
         # Collect the style and remove from the html tree
-        doc.css('style').each_with_index do |style|
+        doc.css('style').each do |style|
           css_parser.add_block!(style.content)
           style.remove
         end
