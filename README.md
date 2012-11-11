@@ -17,7 +17,7 @@ Also, most of the time you need to do things like adding Google Analytics or som
 
 ## Why
 
-Everything I've seen is complicated. Sometimes simple is good. Some people use Sinatra, sometimes people use Jammit for managing their assets. If you can precompile your CSS you can use sexxy-emails to start taming your email templates.
+Everything I've seen is complicated. Sometimes simple is good. Some people use [Sinatra](http://www.sinatrarb.com/), sometimes people use [Jammit](http://documentcloud.github.com/jammit/) for managing their assets. If you can precompile your CSS you can use sexxy-emails to start taming your email templates.
 
 ## Install
 
