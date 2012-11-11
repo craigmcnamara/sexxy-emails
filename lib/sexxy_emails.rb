@@ -6,11 +6,23 @@ module SexxyEmails
   autoload :Css
 
   included do |base|
-    puts "#{base} is now sexxy."
+    base.instance_eval do
+      helper SexxyEmails::MailerHelper
+    end
   end
 
-  module ClassMethods
+  module MailerHelper
+    def stylesheet_include_tag(css)
+      path = css.match(/\.css/) ? s : "#{css}.css"
+      content_tag(:style) do
+        File.open(File.join(Rails.root, 'public', 'stylesheets', path)).read
+      end
+    end
   end
+
+  # module ClassMethods
+  #   # Some day we'll use ClassMethods
+  # end
 
   module InstanceMethods
     protected
