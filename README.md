@@ -3,9 +3,15 @@ sexxy-emails
 
 [![Build Status](https://travis-ci.org/craigmcnamara/sexxy-emails.png)](https://travis-ci.org/craigmcnamara/sexxy-emails)
 
-It's the year 2012 and we sill have to fight with HTML and CSS compatability in HTML email clients.
+It's the year 2012 and we sitll have to fight with HTML and CSS compatability in HTML email clients.
 
-Also, most of the time you need to do things like adding Google Analytics or some other kind of inbound link tracking and overriding your link helpers is tiring and messy. Well, other people have made gems, but the code I've read is very un-sexxy. So the goal of this is to make a simple, readable Rails solution for designing emails that works, you know sexxy.
+Tell the truth, your email styles are probably totally separate for your app. They're probably all just sitting in a messy pile in a template somewhere, aren't they?
+
+Screw that! Got a styleguide? Use your styleguide! And your preprocessors too. Import a compiled CSS file in to your template and let sexxy-emails inline all of those styles. Do you still have to QA it, of course. But you can use your existing tools and templating best practices to make an ugly email template a maintainable part of your application.
+
+**_Coming Soon_**
+
+Also, most of the time you need to do things like adding Google Analytics or some other kind of inbound link tracking and overriding your link helpers is tiring and messy.
 
 [Inspired by TMBG](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
 
@@ -76,10 +82,14 @@ Inline styles for cranky email clients.
 
 ## Upcoming Features.
 
+* Sexxy inbound link parameters for tracking. (coming very soon.)
 * Don't depend on precompiled CSS (maybe?)
-* Sexxy inbound link parameters for tracking.
 * Use asset pipeline in development and test (maybe).
 * Think of something and ask for it.
+
+## Goals
+
+The goal of this project is make common problems with designing and supporting HTML emails simple and easy on the eyes, you know sexxy.
 
 ## Contributions
 
