@@ -9,3 +9,5 @@ rvm:
   - jruby-head
   - 1.8.7
   - ree
+
+services: sqlite3
