@@ -5,9 +5,8 @@ module SexxyEmails
   # Use ActiveSupports Autoload for happiness.
   autoload :Css
 
-  included do |*args|
-    logger.debug "Included args: #{args.to_s}"
-    logger.warn "ActionMailer::Base becoming awesome."
+  included do |base|
+    puts "#{base} is now sexxy."
   end
 
   module ClassMethods

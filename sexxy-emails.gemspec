@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.add_dependency('rdoc')
   s.add_development_dependency('rake')
   s.add_development_dependency('minitest')
+  s.add_development_dependency('mocha')
   s.platform = Gem::Platform::RUBY
   s.rdoc_options << '--all' << '--inline-source' << '--line-numbers' << '--charset' << 'utf-8'
   s.files = (Dir.glob('lib/*.rb') | Dir.glob('lib/**/*.rb') | Dir.glob('test/**/*'))
