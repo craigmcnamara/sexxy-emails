@@ -45,7 +45,18 @@ end
 
 ### Template
 
-Then in the view you can use `stylesheet_include_tag` to pull a precompiled stylesheet in to the template. Sorry no dynamic SASS compilation built in yet. It looks in `public/stylesheets` currently.
+Then in the view you can use `stylesheet_include_tag` to pull a precompiled stylesheet in to the template. It looks in `public/stylesheets` currently.
+
+*Compiled Stylesheet:* `public/stylesheets/basic.css`
+
+```
+p {
+  font-size: 36px;
+  font-family: Helvetica, sans-serif;
+}
+```
+
+*View Template:* `VIEW_PATH/basic_css.html.erb`
 
 ```
 <!DOCTYPE html>
