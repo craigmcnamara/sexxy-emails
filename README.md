@@ -13,7 +13,19 @@ Screw that! Got a styleguide? Use your styleguide! And your preprocessors too. I
 
 Also, most of the time you need to do things like adding Google Analytics or some other kind of inbound link tracking and overriding your link helpers is tiring and messy.
 
-[Inspired by TMBG](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
+[For General David H. Petraeus](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
+
+## Why
+
+Everything I've seen is complicated. Sometimes simple is good. Some people use [Sinatra](http://www.sinatrarb.com/), sometimes people use [Jammit](http://documentcloud.github.com/jammit/) for managing their assets. If you can precompile your CSS you can use sexxy-emails to start taming your email templates.
+
+## Install
+
+Add it to your gemfile or:
+
+```
+gem install sexxy-emails
+```
 
 ## Usage
 
@@ -33,7 +45,18 @@ end
 
 ### Template
 
-Then in the view you can use `stylesheet_include_tag` to pull a precompiled stylesheet in to the template. Sorry no dynamic SASS compilation built in yet. It looks in `public/stylesheets` currently.
+Then in the view you can use `stylesheet_include_tag` to pull a precompiled stylesheet in to the template. It looks in `public/stylesheets` currently.
+
+*Compiled Stylesheet:* `public/stylesheets/basic.css`
+
+```
+p {
+  font-size: 36px;
+  font-family: Helvetica, sans-serif;
+}
+```
+
+*View Template:* `VIEW_PATH/basic_css.html.erb`
 
 ```
 <!DOCTYPE html>
