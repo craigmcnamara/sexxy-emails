@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "sexxy-emails"
-  s.version  = "0.0.2"
+  s.version  = '0.0.3'
   s.date     = "2012-11-10"
   s.summary  = "Make your email templates sexxy. The name was inspired by General David H. Petraeus."
   s.description  = "Adds inline css support to action mailer so you can use a stylesheet to tame your email templates."
@@ -10,8 +10,9 @@ Gem::Specification.new do |s|
   s.author  = "Craig McNamara"
   s.add_dependency('css_parser')
   s.add_dependency('nokogiri')
-  s.add_dependency('rails', '>= 3.0.0')
   s.add_dependency('rdoc')
+  s.add_development_dependency('rails', '>= 3.0.0')
+  s.add_development_dependency('padrino')
   s.add_development_dependency('rake')
   s.add_development_dependency('minitest')
   s.add_development_dependency('mocha')

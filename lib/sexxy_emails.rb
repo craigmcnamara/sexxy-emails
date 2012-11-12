@@ -2,6 +2,8 @@ module SexxyEmails
 
   require File.expand_path('../sexxy_emails/css', __FILE__)
 
+  VERSION = '0.0.3'.freeze
+
   class << self
     def public_folder
       if apps = Padrino::Application.descendants

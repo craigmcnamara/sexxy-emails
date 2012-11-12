@@ -5,7 +5,6 @@ group :development, :test do
   gem 'minitest', '4.0.0'
   gem 'pry'
   gem 'pry-nav'
-  gem 'padrino'
 end
 
 gemspec
