@@ -1,5 +1,5 @@
 require File.expand_path('../../test_helper', __FILE__)
-
+require 'sexxy_emails'
 describe SexxyEmails::Css do
   it "should respond to #inline(html, options)" do
     html = "<html><head></head><body></body></html>"

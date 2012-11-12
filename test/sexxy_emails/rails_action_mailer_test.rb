@@ -1,6 +1,9 @@
 require File.expand_path('../../test_helper', __FILE__)
 
-describe TestMailer do
+# Load the example app
+require File.expand_path('../../example_rails_app/config/environment', __FILE__)
+
+describe ActionMailer do
 
   it "should inline the css on render" do
     SexxyEmails::Css.expects(:inline).once

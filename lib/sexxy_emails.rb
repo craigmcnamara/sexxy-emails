@@ -1,32 +1,30 @@
 module SexxyEmails
-  extend ActiveSupport::Autoload
-  extend ActiveSupport::Concern
 
-  autoload :Css
+  require File.expand_path('../sexxy_emails/css', __FILE__)
 
-  included do |base|
-    base.instance_eval do
-      helper SexxyEmails::MailerHelper
-    end
-  end
-
-  module MailerHelper
-    def stylesheet_include_tag(css)
-      path = css.match(/\.css/) ? s : "#{css}.css"
-      content_tag(:style) do
-        File.open(File.join(Rails.root, 'public', 'stylesheets', path)).read
+  class << self
+    def public_folder
+      if apps = Padrino::Application.descendants
+        apps.first.public_folder
+      elsif defined?(Rails)
+        Rails.public_path
       end
     end
-  end
 
-  # module ClassMethods
-  #   # Some day we'll use ClassMethods
-  # end
-
-  module InstanceMethods
-    protected
-    def render(*args)
-      SexxyEmails::Css.inline(super(*args))
+    def included(base)
+      if base < Padrino::Application
+        require File.expand_path('../sexxy_emails/padrino_mailer', __FILE__)
+        Mail::Message.send(:include, PadrinoMailer::MailerHelper)
+        Mail::Message.send(:include, PadrinoMailer::MailerMethods)
+      elsif base < ActionMailer::Base
+        require File.expand_path('../sexxy_emails/action_mailer', __FILE__)
+        base.send(:include, ActionMailer::MailerMethods)
+        base.instance_eval do
+          helper SexxyEmails::ActionMailer::MailerHelper
+        end
+      end
     end
+    # For Padrino
+    alias :registered :included
   end
 end
