@@ -30,7 +30,7 @@ gem install sexxy-emails
 
 ## Usage
 
-### Mailer
+### ActionMailer
 
 Somewhere in your action mailer `include SexxyEmails` thats it.
 
@@ -41,6 +41,15 @@ class TestMailer < ActionMailer::Base
   def basic_css
     mail(:to => "sexxy-email@test.com", :subject => "Test email subject line")
   end
+end
+```
+
+### Padrino Mailer
+
+```
+class PadrinoApp < Padrino::Application
+  register Padrino::Mailer
+  register SexxyEmails
 end
 ```
 
