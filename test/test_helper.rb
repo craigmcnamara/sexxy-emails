@@ -1,4 +1,4 @@
 require 'rubygems'
 require 'pry'
 require 'minitest/autorun'
-require 'mocha'
+require 'mocha/setup'
