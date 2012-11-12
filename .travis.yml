@@ -13,6 +13,5 @@ services: sqlite3
 
 matrix:
   allow_failures:
-    rvm:
-      - jruby-19mode
-      - jruby-head
+    - rvm: jruby-19mode
+    - rvm: jruby-head
