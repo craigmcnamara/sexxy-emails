@@ -17,8 +17,8 @@ Also, most of the time you need to do things like adding Google Analytics or som
 
 Everything I've seen is complicated. Sometimes simple is good. Some people use [Sinatra](http://www.sinatrarb.com/) or [Padrino](http://www.padrinorb.com/), sometimes people use [Jammit](http://documentcloud.github.com/jammit/) for managing their assets. If you can precompile your CSS you can use sexxy-emails to start taming your email templates.
 
-**_Dedicated To_**
-[For General David H. Petraeus](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
+**_Dedicated To:_**
+[General David H. Petraeus](http://www.youtube.com/watch?v=fu3L8VBAuJ8&feature=related)
 
 ## Install
 
