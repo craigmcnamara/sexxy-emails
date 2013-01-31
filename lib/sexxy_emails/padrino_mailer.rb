@@ -8,7 +8,7 @@ module SexxyEmails::PadrinoMailer
 
   module MailerHelper
     def stylesheet_include_tag(css)
-      path = css.match(/\.css/) ? s : "#{css}.css"
+      path = css.match(/\.css/) ? css : "#{css}.css"
       style = "<style>"
       style << File.open(File.join(SexxyEmails.public_folder, 'stylesheets', path)).read
       style << "</style>"

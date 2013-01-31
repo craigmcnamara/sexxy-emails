@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'css_parser'
+require 'css_parser/rule_set'
 
 module SexxyEmails::Css
   include CssParser
@@ -31,8 +32,8 @@ module SexxyEmails::Css
         declaration
       else
         CssParser.merge(
-          RuleSet.new(nil, declaration), 
-          RuleSet.new(nil, node['style'])).declarations_to_s
+          CssParser::RuleSet.new(nil, declaration), 
+          CssParser::RuleSet.new(nil, node['style'])).declarations_to_s
       end
     end
 

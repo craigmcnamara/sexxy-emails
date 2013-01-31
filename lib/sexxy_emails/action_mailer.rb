@@ -8,7 +8,7 @@ module SexxyEmails::ActionMailer
 
   module MailerHelper
     def stylesheet_include_tag(css)
-      path = css.match(/\.css/) ? s : "#{css}.css"
+      path = css.match(/\.css/) ? css : "#{css}.css"
       content_tag(:style) do
         File.open(File.join(SexxyEmails.public_folder, 'stylesheets', path)).read
       end
