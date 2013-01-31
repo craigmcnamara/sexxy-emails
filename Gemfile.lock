@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sexxy-emails (0.0.3)
+    sexxy-emails (0.0.4)
       css_parser
       nokogiri
       rdoc
@@ -67,7 +67,7 @@ GEM
     minitest (4.0.0)
     mocha (0.13.0)
       metaclass (~> 0.0.1)
-    nokogiri (1.5.5)
+    nokogiri (1.5.6)
     padrino (0.9.29)
       padrino-admin (= 0.9.29)
       padrino-cache (= 0.9.29)
