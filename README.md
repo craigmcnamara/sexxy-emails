@@ -3,6 +3,8 @@ sexxy-emails
 
 [![Build Status](https://travis-ci.org/craigmcnamara/sexxy-emails.png)](https://travis-ci.org/craigmcnamara/sexxy-emails)
 
+[![Code Climate](https://codeclimate.com/github/craigmcnamara/sexxy-emails.png)](https://codeclimate.com/github/craigmcnamara/sexxy-emails)
+
 It's the year 2012 and we sitll have to fight with HTML and CSS compatability in HTML email clients.
 
 Tell the truth, your email styles are probably totally separate for your app. They're probably all just sitting in a messy pile in a template somewhere, aren't they?
