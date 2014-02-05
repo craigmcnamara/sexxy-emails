@@ -114,12 +114,12 @@ Inline styles for cranky email clients.
 
 * Inline the CSS in email templates.
 * Include pre-compiled CSS in to a template for inlining.
+* Asset pipeline support.
 
 ## Upcoming Features.
 
 * Sexxy inbound link parameters for tracking. (coming very soon.)
 * Don't depend on precompiled CSS (maybe?)
-* Use asset pipeline in development and test (maybe).
 * Think of something and ask for it.
 
 ## Goals
