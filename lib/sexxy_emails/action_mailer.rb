@@ -10,7 +10,11 @@ module SexxyEmails::ActionMailer
     def stylesheet_include_tag(css)
       path = css.match(/\.css/) ? css : "#{css}.css"
       content_tag(:style) do
-        File.open(File.join(SexxyEmails.public_folder, 'stylesheets', path)).read
+        if defined? Rails and defined? Sprockets # Asset pipeline support
+          Rails.application.assets[path].body
+        else
+          File.open(File.join(SexxyEmails.public_folder, 'stylesheets', path)).read
+        end
       end
     end
   end
